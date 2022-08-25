@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Movie {
+    constructor(title,studio,rating){
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+        
+    }
+        getPG(){
+            if(this.rating === "PG")
+            return this.title
+         
+        
+    }
+
+        getRating (){
+
+            return this.getPG();
+
+        
+         } 
+            
+            
+        }
+        
+    
+
+    let movie1 = new Movie ("Aadhavan","GVM","PG14");
+    console.log(movie1.title);
+    console.log(movie1.studio);
+    console.log(movie1.rating)
+    let movie2 = new Movie("vikram","Lyca","PG")
+    console.log(movie2);
+   
+    console.log(movie2.getPG());
+
+    let movie3 = new Movie ("Casino Royale","Eon","PG12");
+    console.log(movie3);
+    </script>
+    
+</body>
+</html>

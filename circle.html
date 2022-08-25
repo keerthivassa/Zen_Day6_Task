@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            class Circle {
+                constructor (radius,color){
+                    this.radius = radius;
+                    this.color = color;
+                    
+                }
+             
+                getArea(){
+
+                    let newArea = 2 * 3.14 * this.radius * this.radius
+                    
+                    return (Math.floor(newArea))
+                }
+
+                
+
+                getCircumference(){
+
+                    let circu = 2 * 3.14 * this.radius
+
+                    return (Math.floor(circu))
+                }
+            }
+
+            let circle1 = new Circle (7)
+            console.log(circle1.getArea());
+            console.log(circle1.getCircumference());
+    </script>
+    
+</body>
+</html>
